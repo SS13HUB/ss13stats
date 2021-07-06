@@ -1,0 +1,9 @@
+
+* text=auto
+
+## Enforce text mode and CRLF line breaks
+*.editorconfig text eol=crlf
+*.gitattributes text eol=crlf
+*.gitignore text eol=crlf
+*.md text eol=crlf
+*.txt text eol=crlf
