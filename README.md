@@ -26,12 +26,13 @@
 	<br>
 	<!--
 		Dinamic Badges
+		Note: "../.." for escaping "blob/master"
 	-->
-	<a href="./actions/workflows/main.yml">
+	<a href="./../../actions/workflows/main.yml">
 		<img alt="[CI status]"
-		src="./actions/workflows/main.yml/badge.svg"/>
+		src="./../../actions/workflows/main.yml/badge.svg"/>
 	</a>˙
-	<a href="./commits/">
+	<a href="./../../commits/">
 		<img alt="[Last Commit]"
 		src="https://img.shields.io/github/last-commit/Gesugao-san/infrastructure-template-repository"/>
 	</a>

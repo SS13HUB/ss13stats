@@ -7,3 +7,6 @@
 *.gitignore text eol=crlf
 *.md text eol=crlf
 *.txt text eol=crlf
+*.yml text eol=crlf
+CODEOWNERS text eol=crlf
+LICENSE text eol=crlf
