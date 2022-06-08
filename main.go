@@ -14,7 +14,7 @@ const (
 	internalServerTitle string = "_ss13.se"
 
 	// How old a server entry can get, without updates, before it get's deleted
-	oldServerTimeout = 24 * 3 // in hours
+	oldServerTimeout = 24 * 365 // in hours
 )
 
 type Conf struct {

@@ -1,0 +1,51 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Go: install dependencies",
+            "type": "shell",
+            "command": "go install .",
+            "problemMatcher": [
+                "$go"
+            ],
+        },
+        {
+            "label": "Go: run (server)",
+            "type": "shell",
+            "command": "SET CGO_CFLAGS=\"-g -O2 -Wno-return-local-addr\"; go run '.\\cmd\\server\\server.go'", // https://github.com/mattn/go-sqlite3/issues/822
+            "problemMatcher": [
+                "$go"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Go: test",
+            "type": "shell",
+            "command": "go test '.\\cmd\\server\\server.go'",
+            "problemMatcher": [
+                "$go"
+            ],
+        },
+        {
+            "label": "Go: build",
+            "type": "shell",
+            "command": "go build '.\\cmd\\server\\server.go'",
+            "problemMatcher": [
+                "$go"
+            ],
+        },
+        {
+            "label": "Go: clean",
+            "type": "shell",
+            "command": "go clean -modcache",
+            "problemMatcher": [
+                "$go"
+            ],
+        }
+    ]
+}
