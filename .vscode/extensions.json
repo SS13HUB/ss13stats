@@ -1,5 +1,7 @@
 {
     "recommendations": [
-		"Gesugao-san.general-purpose-extension-pack",
+		"gesugao-san.general-purpose-extension-pack",
+		"jcbuisson.vue",
+		"dbaeumer.vscode-eslint"
 	]
 }
